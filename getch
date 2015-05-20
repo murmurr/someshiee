@@ -1,0 +1,14 @@
+#include <conio.h>
+#include <windows.h>
+
+	int i = 0;
+	while (i >= 0){
+		cout << "delaem";
+		if (_kbhit())
+		{
+			char c = _getche();
+			if (c == 27) { break; }// если клавиша esc
+		}
+		Sleep(1000);
+		system("cls");
+	}
